@@ -35,7 +35,7 @@ app.post('/send', (req, res) => {
     <p> ${req.body.message} </p>
   `;
 
-      // create reusable transporter object using the default SMTP transport
+/*      // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
       host: "smtp.ethereal.email",
       port: 587,
@@ -62,6 +62,8 @@ app.post('/send', (req, res) => {
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     }
+    */
 });
+
 
 app.listen(3000, () => console.log('Server Started..'));
